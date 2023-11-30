@@ -1,0 +1,558 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+}
+.container .logo {
+    position: absolute;
+    left: 100px;
+    top: 50px;
+}
+.container .logo img{
+    max-width: 70px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px black;
+}
+.container .searchArea{
+    position: fixed;
+    right: 100px;
+    top: 60px;
+    width: 170px;
+    height: 45px;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    box-shadow: 0px 0px 10px rgb(211,211,211);
+    z-index: 1;
+}
+.container .searchArea .searchbox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container .searchArea .searchbox input{
+    border: none;
+    outline: none;
+    width: 90px;
+    background-color: transparent;
+    font-size: 1rem;
+    padding: 0px 10px;
+}
+.container .searchArea .searchbox input::placeholder{
+    font-family: poppins;
+    text-align: center;
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+}
+.container .section1{
+    position: absolute;
+    left: 10%;
+    top: 30%;
+    transform: translate(-10% -30%);
+}
+.container .section1 img{
+    height: 300px;
+}
+.container .section2{
+    position: absolute;
+    top: 35%;
+    left: 60%;
+    transform: translate(-50% -70%);
+}
+.container .section2 h1,h2{
+    font-family: roboto;
+    font-size: 60px;
+    font-weight: bold;
+    margin: 0px;
+    line-height: 69px;
+    text-shadow: 2px 2px 10px black;
+    color: #3d3d3d;
+    text-transform: uppercase;
+}
+.container .section2 h1{
+    letter-spacing: 37px;
+}
+.container .section2 span{
+    color: #7a72ff;
+    text-shadow: 2px 2px 10px #7a72ff;
+}
+.container .section2 .btn{
+    width: 150px;
+    height: 40px;
+    background-color: #2f2e41;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    box-shadow: 0px 0px 30px rgb(170, 170, 170);
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    outline: none;
+    margin-top: 20px;
+    font-family: calibri;
+    cursor: pointer;
+    border-radius: 50px;
+}
+.container .section2 .btn:hover{
+    background-color: #6e64ff;
+    transition: all 0.1s ease-in;
+}
+.container .iconArea{
+    position: fixed;
+    left: 27px;
+    top: 30%;
+    transform: translate(-27% -37%);
+    background-color: #fff;
+    border-radius: 50px;
+    box-shadow: 0px 0px 10px rgb(211, 211, 211);
+}
+.container .iconArea a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    padding: 15px 8px;
+    color: rgb(58, 58, 58);
+    font-size: 30px;
+}
+.container .iconArea a:nth-child(1):hover{
+    color: #1877F2;
+}
+.container .iconArea a:nth-child(2):hover{
+    color:  #1DA1F2;
+}
+.container .iconArea a:nth-child(3):hover{
+    color: #fccc63;
+}
+.container .iconArea a:nth-child(4):hover{
+    color:  #0077b5;
+}
+.container .iconArea a:nth-child(5):hover{
+    color: #CD201F;
+}
+/* product section */
+
+.productSection{
+    width: 85%;
+    margin: 30px auto;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 15px rgb(212, 212, 212);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    background-size: 1000px;
+}
+
+.productSection h3{
+    padding: 30px 0px;
+    font-size: 30px;
+    font-family: serif;
+    text-shadow: 2px 2px 10px rgb(233, 233, 233);
+    color: #323543;
+    letter-spacing: 4px;
+    font-weight: 700;
+}
+.productSection h3 span{
+    color: #7a72ff;
+    text-shadow: 2px 2px 10px #f1f1ff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.productSection hr{
+    position: absolute;
+    width: 60%;
+    top: 100px;
+}
+.productSection .productCollection .productBox img{
+    height: 180px;
+}
+
+.productSection .productCollection{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 10px 0px;
+    width: 100%;
+}
+.productSection .productCollection .productBox{  
+    height: 350px;
+    width: 300px; 
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    flex-direction: column;
+    margin: 20px 40px;
+    border-radius: 10px;
+    position: relative;
+}
+.productSection .productCollection .productBox:hover{
+    transition: all 0.2s ease-in;
+    box-shadow: 0px 0px 20px rgb(214, 214, 214);
+}
+.productSection .productCollection .productBox p{
+    color: #4d4d4d70;
+    font-family: myriad pro;
+    letter-spacing: 0.5px;
+    font-size: 0.9rem;
+    margin: 0;
+    padding: 0;
+}
+.productSection .productCollection .productBox .money{
+    text-decoration: none;
+    color: #2c2c2c;
+    font-family: poppins;
+    margin-top: 20px;
+    border: 2px solid rgb(107, 107, 107);
+    padding: 5px 10px;
+    border-radius: 50px;
+}
+.productSection .productCollection .productBox .BuyBtn{
+    position: absolute;
+    width: 140px;
+    height: 40px;
+    background: linear-gradient(120deg,#6b60ec 20%, #a166f4);
+    bottom: -20px;
+    border-radius: 50px;
+    color: rgb(0, 0, 0);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    animation: fade 0.2s;
+    text-decoration: none;
+    font-family: poppins;
+} 
+.productSection .productCollection .productBox:hover .BuyBtn{
+    display: flex;
+}
+.productSection .productCollection .productBox .BuyBtn:hover{
+    color: white;
+    text-decoration: underline;
+    box-shadow: 0px 0px 10px #6b60ec;
+    transition: all 0.1s ease-in;
+}
+
+
+
+.about{
+    width: 85%;
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0px 0px 20px rgb(207, 207, 207);
+    border-radius: 10px;
+}
+.text img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.text{
+    width: 40%;
+    font-family: myriad pro;
+}
+.about .text h1{
+    color: #333333;
+    font-weight: 700;
+    font-size: 3rem;
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.about .text h4{
+    color: #333333;
+    font-weight: 400;
+    font-size: 2rem;
+    margin: 10px 0px;
+}
+.about .text a{
+    color: #0077b5;
+    text-decoration: none;
+}
+.about .text p{
+    margin-top: 10px;
+    color: #9c9c9c;
+    font-size: 1rem;
+    letter-spacing: 0.5px;
+}
+
+
+.order img{
+    height: 180px;
+    position: absolute;
+    top: 10px;
+}
+
+.orderlist{
+    width: 85%;
+    height: 1000px;
+    margin: 0px auto;
+    box-shadow: 0px 0px 20px rgb(211, 211, 211);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.orderlist p{
+    position: absolute;
+    top: 60%;
+    font-size: 15px;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    color:#3d3d3d ;
+}
+.orderlist p span{
+    font-size: 17px;
+    font-family: serif;
+    color: #0077b5;
+}
+
+h1{
+    margin-top: 0px;
+    padding: 0;
+    font-size: 35px;
+    font-weight: 600;
+    font-family: serif;
+}
+.orderlist h1 span{
+    color: #1DA1F2;
+    font-family: Arial, Helvetica, sans-serif;
+}
+hr{
+    width: 50%;
+}
+.orderlist .orderArea{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.orderlist .orderArea .order{
+    height: 330px;
+    width: 300px;
+    margin: 30px auto;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+.orderlist .orderArea .order:hover{
+    box-shadow: 0px 0px 20px rgb(201, 201, 201);
+}
+.orderlist .orderArea .order:hover .add{
+    display: flex;
+}
+.orderlist .orderArea .order .add:hover{
+    font-family: serif;
+    text-decoration: underline;
+    color: white;
+}
+
+.orderlist .orderArea .order .tk{
+    font-size: 20px;
+    padding: 2px 8px;
+    font-weight: 600;
+    font-family: serif;
+    text-decoration: none;
+    color: #2c2c2c;
+    border: 3px solid #2c2c2c;
+    border-radius: 50px;
+    position: absolute;
+    bottom: 15%;
+}
+.orderlist .orderArea .order .add{
+    height: 40px;
+    width: 120px;
+    text-decoration: none;
+    color: #2c2c2c;
+    font-weight: 700;
+    background: linear-gradient(120deg,#6b60ec 20%, #a166f4);
+    box-shadow: 0px 0px 15px rgb(110, 110, 190);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    position: absolute;
+    bottom: -19px;
+}
+
+footer{
+    width: 85%;
+    margin: 30px auto;
+    padding: 30px 0px;
+    text-align: center;
+    position: relative;
+}
+footer .footerBox{
+    margin: auto;
+    width: 40%;
+    height: 40px;
+    box-shadow: 0px 0px 15px rgb(204, 204, 204);
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+footer h1{
+    font-size: 30px;
+    text-transform: capitalize;
+}
+footer h1 span{
+    color: #1DA1F2;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 5px;
+}
+footer .footerBox input{
+    border: none;
+    outline: none;
+    margin-left: 20px;
+    position: relative;
+}
+footer .footerBox input::placeholder{
+    position: absolute;
+    margin-left: 10px;
+    font-size: 15px;
+    bottom: 1px;
+}
+footer .footerBox button{
+    position: absolute;
+    right: 0px;
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 600;
+    font-family: serif;
+    text-transform: uppercase;
+    background-color: black;
+    color: white;
+}
+
+mainfooter{
+    position: absolute;
+    width: 100%;
+    height: 40px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+mainfooter h4{
+    color: white;
+    font-family: serif;
+    font-size: 20px;
+    word-spacing: 5px;
+}
+
+/* mobile view */
+
+@media screen and (max-width:720px) {
+    .container {
+        height: 25vh;
+    }
+    .container .iconArea a {
+        font-size: 20px;
+    }
+    .container .iconArea{
+        top: 40%;
+    }
+    .container .searchArea{
+        right: 55px;
+    }
+    .container .section1 img {
+        height: 190px;
+    }
+    .container .section1 {
+        left: 10%;
+        top: 11%;
+    }
+    .container .logo {
+        top: 35px;
+    }
+    .container .section2{
+        top: 13%;
+    }
+    .container .section2 h1 {
+        letter-spacing: 20px;
+    }
+    .container .section2 h1, h2 {
+        font-size: 30px;
+        line-height: 35px;
+    }
+    .productSection {
+        width: 85%;
+        margin-left: 12%;
+        margin-top: 15%;
+    }
+    .productSection h3 {
+        padding: 0;
+    }
+    .productSection hr{
+        width: 75%;
+        top: 75px;
+    }
+    .productSection .productCollection .productBox img {
+        height: 120px;
+    }
+    .productSection .productCollection .productBox{
+        height: 230px;
+        width: 115px;
+    }
+    .about {
+        margin-left: 12%;
+    }
+    .about .text h4{
+        font-size: 15px;
+    }
+    .about .text p {
+        font-size: 15px;
+    }
+    .about .text h1{
+        font-size: 2rem;
+    }
+    .text{
+        margin-top: 20px;
+    }
+    .orderlist h1{
+        margin-top: 15%;
+    }
+    .orderlist {
+        margin-left: 12%;
+        height: 700px;
+    }
+    .order img{
+        height: 120px;
+    }
+    .orderlist .orderArea .order{
+        height: 230px;
+        width: 170px;
+    }
+    .orderlist p {
+        top: 55%;
+    }
+    .orderlist .orderArea .order .tk{
+        bottom: 12%;
+    }
+    footer {
+        margin-left: 12%;
+    }
+}
