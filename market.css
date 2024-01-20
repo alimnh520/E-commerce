@@ -4,6 +4,9 @@ body{
     box-sizing: border-box;
     font-family: sans-serif;
 }
+
+/* container start */
+
 .container{
     width: 100%;
     height: 100vh;
@@ -45,11 +48,14 @@ body{
     font-size: 1rem;
     padding: 0px 10px;
 }
+.container .searchArea .searchbox i{
+    font-size: 15px;
+}
 .container .searchArea .searchbox input::placeholder{
     font-family: poppins;
     text-align: center;
-    font-size: 0.8rem;
-    letter-spacing: 2px;
+    font-size: 10px;
+    letter-spacing: 0px;
 }
 .container .section1{
     position: absolute;
@@ -139,6 +145,8 @@ body{
 .container .iconArea a:nth-child(5):hover{
     color: #CD201F;
 }
+/* container end */
+
 /* product section */
 
 .productSection{
@@ -241,8 +249,6 @@ body{
     box-shadow: 0px 0px 10px #6b60ec;
     transition: all 0.1s ease-in;
 }
-
-
 
 .about{
     width: 85%;
@@ -391,6 +397,9 @@ hr{
     position: absolute;
     bottom: -19px;
 }
+/* product-section end */
+
+/* footer start */
 
 footer{
     width: 85%;
@@ -466,93 +475,244 @@ mainfooter h4{
 /* mobile view */
 
 @media screen and (max-width:720px) {
-    .container {
-        height: 25vh;
-    }
-    .container .iconArea a {
-        font-size: 20px;
-    }
-    .container .iconArea{
-        top: 40%;
-    }
-    .container .searchArea{
-        right: 55px;
-    }
-    .container .section1 img {
-        height: 190px;
-    }
-    .container .section1 {
-        left: 10%;
-        top: 11%;
-    }
-    .container .logo {
-        top: 35px;
-    }
-    .container .section2{
-        top: 13%;
-    }
-    .container .section2 h1 {
-        letter-spacing: 20px;
-    }
-    .container .section2 h1, h2 {
-        font-size: 30px;
-        line-height: 35px;
-    }
-    .productSection {
-        width: 85%;
-        margin-left: 12%;
-        margin-top: 15%;
-    }
-    .productSection h3 {
-        padding: 0;
-    }
-    .productSection hr{
-        width: 75%;
-        top: 75px;
-    }
-    .productSection .productCollection .productBox img {
-        height: 120px;
-    }
-    .productSection .productCollection .productBox{
-        height: 230px;
-        width: 115px;
-    }
-    .about {
-        margin-left: 12%;
-    }
-    .about .text h4{
-        font-size: 15px;
-    }
-    .about .text p {
-        font-size: 15px;
-    }
-    .about .text h1{
-        font-size: 2rem;
-    }
-    .text{
-        margin-top: 20px;
-    }
-    .orderlist h1{
-        margin-top: 15%;
-    }
-    .orderlist {
-        margin-left: 12%;
-        height: 700px;
-    }
-    .order img{
-        height: 120px;
-    }
-    .orderlist .orderArea .order{
-        height: 230px;
-        width: 170px;
-    }
-    .orderlist p {
-        top: 55%;
-    }
-    .orderlist .orderArea .order .tk{
-        bottom: 12%;
-    }
-    footer {
-        margin-left: 12%;
-    }
+    /* container start */
+
+.container{
+    width: 100%;
+    height: 500px;
+}
+.container .logo {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+}
+.container .logo img{
+    max-width: 40px;
+}
+.container .searchArea{
+    position: fixed;
+    right: 10px;
+    top: 10px;
+    width: 120px;
+    height: 35px;
+}
+.container .searchArea .searchbox input{
+    width: 50px;
+}
+.container .searchArea .searchbox input::placeholder{
+    font-family: poppins;
+    text-align: center;
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+}
+.container .section1{
+    position: absolute;
+    left: 20%;
+    top: 20%;
+    transform: translate(-20% -20%);
+}
+.container .section1 img{
+    height: 130px;
+}
+.container .section2{
+    position: absolute;
+    top: 280px;
+    left: 60px;
+    transform: translate(-280px -60px);
+}
+.container .section2 h1,h2{
+    font-family: roboto;
+    font-size: 30px;
+    font-weight: bold;
+    margin: 0px;
+    line-height: 40px;
+    text-shadow: 2px 2px 10px black;
+    color: #3d3d3d;
+    text-transform: uppercase;
+}
+.container .section2 h1{
+    letter-spacing: 15px;
+}
+.container .section2 span{
+    color: #7a72ff;
+    text-shadow: 2px 2px 10px #7a72ff;
+}
+.container .section2 .btn{
+    width: 130px;
+    height: 37px;
+}
+.container .iconArea{
+    left: 2%;
+    top: 30%;
+    z-index: 1;
+}
+.container .iconArea a{
+    font-size: 20px;
+}
+/* container end */
+
+/* product section */
+
+.productSection{
+    background-size: auto;
+    flex-direction: column;
+}
+
+.productSection h3{
+    padding: 30px 0px;
+    font-size: 30px;
+    font-family: serif;
+    text-shadow: 2px 2px 10px rgb(233, 233, 233);
+    color: #323543;
+    letter-spacing: 4px;
+    font-weight: 700;
+    text-align: center;
+}
+.productSection hr{
+    position: absolute;
+    width: 90%;
+    top: 150px;
+}
+.productSection .productCollection .productBox img{
+    height: 150px;
+}
+.productSection .productCollection .productBox{  
+    height: 300px;
+    width: 250px; 
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    flex-direction: column;
+    margin: 20px 10px;
+}
+.productSection .productCollection .productBox p{
+    text-align: center;
+    padding-top: 10px;
+}
+.productSection .productCollection .productBox .money{
+    padding: 3px 9px;
+}
+.productSection .productCollection .productBox .BuyBtn{
+    position: absolute;
+    width: 120px;
+    height: 35px;
+} 
+
+/* about-start */
+
+.about{
+    width: 85%;
+    height: 600px;
+    overflow: hidden;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 20px rgb(207, 207, 207);
+    border-radius: 10px;
+}
+.text img{
+    height: 150px;
+    width: 200px
+}
+.text{
+    width: 100%;
+    font-family: myriad pro;
+}
+.text:nth-child(2){
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.about .text h1{
+   text-align: center;
+    font-size: 40px;
+}
+.about .text h4{
+    width: 90%;
+    color: #333333;
+    font-weight: 400;
+    font-size: 22px;
+    margin: 10px auto;
+}
+
+
+.order img{
+    height: 150px;
+}
+
+.orderlist{
+    width: 85%;
+    height: auto;
+    margin: 0px auto;
+}
+
+h1{
+    margin-top: 20px;
+    text-align: center;
+}
+hr{
+    width: 90%;
+    margin-top: -10px;
+}
+
+.orderlist .orderArea .order .tk{
+    bottom: 13%;
+}
+
+/* footer start */
+
+footer{
+    width: 85%;
+    height: 140px;
+    margin: 30px auto;
+    padding: 30px 0px;
+    text-align: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+footer .footerBox{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0px auto;
+    width: 85%;
+    height: 35px;
+}
+footer h1{
+    font-size: 20px;
+    line-height: 30px;
+}
+footer .footerBox input{
+    border: none;
+    outline: none;
+    margin-left: 10px;
+    position: relative;
+}
+footer .footerBox input::placeholder{
+    position: relative;
+    margin-left: 10px;
+    font-size: 15px;
+    bottom: 1px;
+}
+footer .footerBox button{
+    padding: 9px 15px;
+}
+
+mainfooter{
+    position: absolute;
+    width: 100%;
+    height: 30px;
+    background-color: black;
+}
+mainfooter h4{
+    font-size: 15px;
+    word-spacing: 3px;
+}
+
+
 }
