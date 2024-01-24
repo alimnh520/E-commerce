@@ -474,7 +474,7 @@ mainfooter h4{
 
 /* mobile view */
 
-@media screen and (min-width:768px) {
+@media screen and (max-width:720px) {
     /* container start */
 
 .container{
